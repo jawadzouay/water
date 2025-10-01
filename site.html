@@ -1,0 +1,98 @@
+<!-- MOI | Section: المياه والري -->
+<section dir="rtl" class="moi-section">
+  <style>
+    .moi-section{
+      --moi-ivory:#F8F6F1;
+      --moi-gold:#D4A373;
+      --moi-green:#1B4332;
+      --moi-blue:#0077B6;
+      --moi-black:#2E2E2E;
+
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      background: var(--moi-ivory);
+
+      /* ✅ الطول يتمدد حسب المحتوى + الحد الأدنى شاشة كاملة */
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .moi-card{
+      background:#fff;
+      width:100%;
+      max-width: 900px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.07);
+      border: 1px solid rgba(0,0,0,.06);
+      overflow: hidden;
+    }
+    .moi-head{
+      display:flex; align-items:center; gap:14px;
+      padding:22px 24px;
+      background: linear-gradient(90deg, rgba(0,119,182,.1), rgba(212,163,115,.1));
+      border-bottom:1px solid rgba(0,0,0,.05);
+    }
+    .moi-icon{
+      width:48px;height:48px; border-radius:12px;
+      background:#fff; display:grid; place-items:center;
+      box-shadow: 0 4px 12px rgba(0,0,0,.08); border:1px solid rgba(0,0,0,.06);
+    }
+    .moi-title{
+      margin:0; color:var(--moi-green); font-weight:800; font-size:1.5rem;
+      letter-spacing:.2px;
+    }
+    .moi-sub{ margin:6px 0 0; color:var(--moi-black); font-size:1rem }
+    .moi-body{ padding:22px 24px }
+    .moi-list{ list-style:none; margin:14px 0 0; padding:0; display:grid; gap:12px }
+    .moi-list li{
+      position:relative; padding:12px 14px 12px 36px; background:#fff;
+      border:1px solid rgba(0,0,0,.06); border-radius:12px;
+      font-size:1rem; line-height:1.6;
+    }
+    .moi-list li::before{
+      content:""; position:absolute; right:10px; top:50%; transform:translateY(-50%);
+      width:16px; height:16px; border-radius:50%;
+      background:var(--moi-blue); box-shadow: inset 0 0 0 4px #fff;
+    }
+    .moi-cta{
+      display:inline-block; margin-top:22px; padding:14px 22px;
+      background:var(--moi-gold); color:#000; text-decoration:none; font-weight:700;
+      border-radius:12px; border:1px solid rgba(0,0,0,.08);
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    }
+    .moi-cta:hover{ transform: translateY(-1px); box-shadow:0 8px 18px rgba(0,0,0,.12) }
+
+    /* ✅ تجاوب موبايل */
+    @media (max-width:520px){
+      .moi-head{ flex-direction: column; align-items:flex-start; }
+      .moi-title{ font-size:1.25rem }
+    }
+  </style>
+
+  <article class="moi-card" aria-label="المياه والري">
+    <header class="moi-head">
+      <div class="moi-icon" aria-hidden="true">
+        <!-- قطرة ماء -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M12 2C12 2 5 9.2 5 14a7 7 0 1 0 14 0C19 9.2 12 2 12 2Z" fill="#0077B6"/>
+        </svg>
+      </div>
+      <div>
+        <h3 class="moi-title">المياه والري</h3>
+        <p class="moi-sub">حلول شاملة للمياه وأنظمة الري لضمان استدامة الأراضي والمزارع.</p>
+      </div>
+    </header>
+
+    <div class="moi-body">
+      <ul class="moi-list">
+        <li>حفر الآبار المائية بجودة عالية وتجهيزها.</li>
+        <li>إنشاء بحيرات وخزانات لتجميع المياه.</li>
+        <li>تصميم وتركيب أنظمة الري بالتنقيط الحديثة لتوفير المياه وزيادة الإنتاجية.</li>
+        <li>صيانة وإصلاح شبكات الري.</li>
+        <li>حلول مخصصة للمزارع الكبيرة والحدائق الخاصة.</li>
+      </ul>
+      <a class="moi-cta" href="#contact">اطلب معاينة ميدانية</a>
+    </div>
+  </article>
+</section>
